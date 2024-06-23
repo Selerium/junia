@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="{% if lang == "ar"%}rtl{% else %}ltr{% endif %}" lang="{{ lang }}">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="/fonts.css">
+		<link rel="stylesheet" href="/base.css">
+		<link rel="stylesheet" href="/index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<title>C-Zone</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="heading">
+				<a href="/">
+					<h1>JUNIA</h1>
+					<h3>tour guide consultancy</h3>
+				</a>
+			</div>
+			<div class="options">
+				<a href="/">book a tour</a>
+				<a href="#about-us">about</a>
+				<div class="social-icons">
+					<a href="#">
+						<img src="/social-icons/whatsapp.png">
+					</a>
+					<a href="#">
+						<img src="/social-icons/facebook.png">
+					</a>
+					<a href="#">
+						<img src="/social-icons/instagram.png">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		{% block content %} {% endblock content %}
+
+		<div class="footer">
+			<a href="#">send us an email</a>
+			<a href="#">whatsapp</a>
+			<a href="#">facebook</a>
+			<a href="#">instagram</a>
+		</div>
+	</body>
+</html>
