@@ -1,6 +1,6 @@
 +++
 
 title="Test Tour"
-template="index.html"
+template="base.html"
 
 +++
