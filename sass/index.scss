@@ -1,8 +1,68 @@
+@keyframes change-pic {
+	0% {
+		opacity: 1;
+	}
+	20% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	95% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+
+$time: 20;
+
 body {
 	.showreel {
-		height: 40vh;
+		position: relative;
+		height: 60vh;
 		width: 100vw;
 		background-color: black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+
+		.blur-layer {
+			position: absolute;
+			left: 0;
+			z-index: 10;
+			height: 100%;
+			width: 60%;
+			backdrop-filter: blur(2px);
+			
+			h1 {
+				position: absolute;
+				top: calc(50vh - 19rem);
+				left: 10vw;
+				color: black;
+				font-size: 6rem;
+				vertical-align: middle;
+				width: 80%;
+			}
+		}
+
+		img {
+			opacity: 0;
+			position: absolute;
+			top: -50%;
+			height: auto;
+			width: 100%;
+			animation: change-pic #{$time}s linear infinite;
+		}
+
+		@for $i from 1 through 4 {
+			img:nth-child(#{$i}n) {
+				animation-delay: #{($i - 4) * $time/4}s;
+			}
+		}
 	}
 
 	.offers {

@@ -3,7 +3,12 @@
 {% block content %}
 
 <div class="showreel">
-	
+	<div class="blur-layer">
+		<h1>Discover the Emirates with Junia</h1>
+	</div>
+	{% for image in section.extra.carousel %}
+	<img src="{{ image.image }}">
+	{% endfor %}
 </div>
 
 <div class="offers" id="offers">
@@ -31,15 +36,15 @@
 		<div class="img-wrapper">
 			<h2>LANGUAGES</h2>
 			<div class="languages">
-				<div class="lang-wrap left" onclick="changeLanguage()">
+				<div class="lang-wrap" onclick="changeLanguage()">
 					<img src="languages/norwegian.png">
 					<h4>Norwegian</h4>
 				</div>
-				<div class="lang-wrap shown" onclick="changeLanguage()">
+				<div class="lang-wrap" onclick="changeLanguage()">
 					<img src="languages/english.png">
 					<h4>English</h4>
 				</div>
-				<div class="lang-wrap right" onclick="changeLanguage()">
+				<div class="lang-wrap" onclick="changeLanguage()">
 					<img src="languages/german.png">
 					<h4>German</h4>
 				</div>

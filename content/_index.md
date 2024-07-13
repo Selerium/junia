@@ -76,4 +76,16 @@ price = 360
 image = "offers/desert-camel.png"
 place = "Abu Dhabi"
 
+[[extra.carousel]]
+image = "carousel/carousel1.jpg"
+
+[[extra.carousel]]
+image = "carousel/carousel2.jpg"
+
+[[extra.carousel]]
+image = "carousel/carousel3.jpg"
+
+[[extra.carousel]]
+image = "carousel/carousel4.jpg"
+
 +++
