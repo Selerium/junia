@@ -16,19 +16,18 @@ html {
 
 @keyframes move {
 	0% {
-		transform: translateX(10rem);
+		transform: translateX(400%);
 		opacity: 0;
 	}
-	15% {
-		transform: translate(0);
+	10% {
 		opacity: 1;
 	}
-	30% {
-		transform: translateX(-10rem);
-		opacity: 0;
+	90% {
+		opacity: 1;
 	}
 	100% {
 		opacity: 0;
+		transform: translateX(-400%);
 	}
 }
 
@@ -59,11 +58,20 @@ body {
 
 				h3 {
 					font-style: italic;
+
+					@media screen and (max-width: 1300px) {
+						display: none;
+					}
 				}
 			}
 		}
-		
+
 		.options {
+
+			@media screen and (max-width: 900px) {
+				display: none;
+			}
+
 			display: flex;
 			align-items: center;
 			gap: 5rem;
@@ -99,6 +107,17 @@ body {
 				}
 			}
 		}
+
+		.buttons {
+			@media screen and (min-width: 900px) {
+				display: none;
+			}
+
+			img {
+				width: 58px;
+				height: auto;
+			}
+		}
 	}
 
 	.footer {
@@ -108,6 +127,13 @@ body {
 		justify-content: space-evenly;
 		align-items: center;
 		background-color: black;
+
+		@media screen and (max-width: 600px) {
+			padding: 20px 0;
+			height: fit-content;
+			flex-direction: column;
+			gap: 20px;
+		}
 
 		a {
 			font-style: italic;

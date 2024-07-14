@@ -5,11 +5,47 @@
 <div class="showreel">
 	<div class="blur-layer">
 		<h1>Discover the Emirates with Junia</h1>
+		<h3>available in the following lanugages:</h3>
 	</div>
 	{% for image in section.extra.carousel %}
-	<img src="{{ image.image }}">
+	<img class="bg-image" src="{{ image.image }}">
 	{% endfor %}
+	<div class="img-wrapper">
+		<!-- <h2>LANGUAGES</h2> -->
+		<div class="languages">
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/english.png">
+				<h4>English</h4>
+			</div>
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/norwegian.png">
+				<h4>Norwegian</h4>
+			</div>
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/german.png">
+				<h4>German</h4>
+			</div>
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/swedish.png">
+				<h4>Swedish</h4>
+			</div>
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/polish.png">
+				<h4>Polish</h4>
+			</div>
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/russian.png">
+				<h4>Russian</h4>
+			</div>
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/danish.png">
+				<h4>Danish</h4>
+			</div>
+		</div>
+	</div>
 </div>
+
+
 
 <div class="offers" id="offers">
 	<h1>TOUR THE EMIRATES OFFERS</h1>
@@ -33,48 +69,21 @@
 <div class="about-us" id="about-us">
 	<h1>ABOUT US</h1>
 	<div class="about-grid">
-		<div class="img-wrapper">
-			<h2>LANGUAGES</h2>
-			<div class="languages">
-				<div class="lang-wrap" onclick="changeLanguage()">
-					<img src="languages/norwegian.png">
-					<h4>Norwegian</h4>
-				</div>
-				<div class="lang-wrap" onclick="changeLanguage()">
-					<img src="languages/english.png">
-					<h4>English</h4>
-				</div>
-				<div class="lang-wrap" onclick="changeLanguage()">
-					<img src="languages/german.png">
-					<h4>German</h4>
-				</div>
-				<div class="lang-wrap" onclick="changeLanguage()">
-					<img src="languages/swedish.png">
-					<h4>Swedish</h4>
-				</div>
-				<div class="lang-wrap" onclick="changeLanguage()">
-					<img src="languages/polish.png">
-					<h4>Polish</h4>
-				</div>
-				<div class="lang-wrap" onclick="changeLanguage()">
-					<img src="languages/russian.png">
-					<h4>Russian</h4>
-				</div>
-				<div class="lang-wrap" onclick="changeLanguage()">
-					<img src="languages/danish.png">
-					<h4>Danish</h4>
-				</div>
-			</div>
-		</div>
 		<div class="junia-info">
-			<p class="upper">Junia Tour Guide Consultancy creates personalized experiences for visitors looking to enjoy the beauty and culture of the United Arab Emirates. Serving tourists since 201x, Junia provides exceptional hospitality to you, with our multilingual tour guide services.</p>
+			<p class="upper">Junia Tour Guide Consultancy creates personalized experiences for visitors looking to enjoy the beauty and culture of the United Arab Emirates. We provides exceptional hospitality with our multilingual tour guide services.</p>
 			<p class="lower">Julia Undevik is an international tour guide expert, certified for Abu Dhabi and has a fluency in 7 different languages.</p>
+		</div>
+		<div class="image-carousel">
+			<!-- <img src="about-images/1.jpg"> -->
+			<!-- <img src="about-images/3.jpg"> -->
+			<img src="about-images/2.jpg">
+			<!-- <img src="about-images/4.jpg"> -->
 		</div>
 	</div>
 </div>
 
 <div class="certificates">
-	<h1>CERTFICATIONS</h1>
+	<h1>CERTIFICATIONS</h1>
 	<div class="info">
 		<div class="wrapper">
 			<img src="certificates/louvre.png">
@@ -86,7 +95,5 @@
 		</div>
 	</div>
 </div>
-
-<script defer src="scripts/changeLang.js"></script>
 
 {% endblock %}
