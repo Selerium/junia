@@ -22,7 +22,7 @@ place = "Abu Dhabi"
 num = 2
 title = "Half Day Abu Dhabi City Tour (4 hours)"
 price = 365
-image = "offers/abu-dhabi.png"
+image = "offers/abu-dhabi-mosque.jpg"
 place = "Abu Dhabi"
 
 [[extra.table]]
@@ -71,14 +71,14 @@ place = "Dubai"
 num = 9
 title = "Full Day Al Ain Tour + Lunch (10 hours)"
 price = 1600
-image = "offers/al-ain.png"
+image = "offers/jahili-fort.jpg"
 place = "Al Ain"
 
 [[extra.table]]
 num = 10
 title = "Desert Safari + Dinner Under The Stars"
 price = 360
-image = "offers/desert-safari.png"
+image = "offers/desert-safari.jpg"
 place = "Abu Dhabi"
 
 [[extra.table]]
