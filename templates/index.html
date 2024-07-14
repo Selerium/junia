@@ -45,14 +45,34 @@
 	</div>
 </div>
 
-
+<div id="black-layer">
+	<div id="info-popup">
+		<img class="close" src="icons/close.png" onclick="showInfo('close')">
+		<h1>TOUR INFO</h1>
+		<div class="grid">
+			<p id="info-para">Junia Tour Guide Consultancy creates personalized experiences for visitors looking to enjoy the beauty and culture of the United Arab Emirates. Serving tourists since 201x, Junia provides exceptional hospitality to you, with our multilingual tour guide services.</p>
+			<div class="info">
+				<div class="wrap">
+					<img src="icons/time.png">
+					<p id="info-time">4 hours</p>
+				</div>
+				<br>
+				<div class="wrap">
+					<img src="icons/location.png">
+					<p id="info-location">Saadiyat Island, Abu Dhabi</p>
+				</div>
+			</div>
+		</div>
+		<a id="mail-button" href="mailto:bookings@juniatourism.com?subject=Booking (Tour Name)&body=Hi, I'd like to enquire about TOUR NAME for the date of *fill date here*">BOOK VIA EMAIL</a>
+	</div>
+</div>
 
 <div class="offers" id="offers">
 	<h1>TOUR THE EMIRATES OFFERS</h1>
 	<div class="offers-grid">
 		{% for offer in section.extra.table %}
-		<div class="single-offer" style="background-image: url({{ offer.image }});">
-			<a href="">
+		<div class="single-offer" style="background-image: url({{ offer.image }});" onclick="showInfo('{{ offer.num }}')">
+			<a>
 				<div class="header">
 					<h4 class="place">{{ offer.place }}</h4>
 				</div>
@@ -95,5 +115,7 @@
 		</div>
 	</div>
 </div>
+
+<script defer src="scripts/info.js"></script>
 
 {% endblock %}

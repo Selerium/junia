@@ -1,0 +1,76 @@
+{
+	"info" : [
+		{
+			"title": "Louvre Abu Dhabi Tour",
+			"info": "Louvre Abu Dhabi is an art and civilization museum, the largest in the Arabian Peninsula. It presents artworks from across the world and emphasizes the connections between Eastern and Western art. The architecture, featuring a stunning dome, is a marvel in itself.",
+			"duration": "2-3 hours",
+			"location": "Abu Dhabi"
+		},
+		{
+			"title": "Qasr Al Watan Tour",
+			"info": "Qasr Al Watan is a working presidential palace and a cultural landmark that offers deep insights into the Arabian heritage. It showcases the rich history and traditions of the United Arab Emirates through various exhibits and an impressive library.",
+			"duration": "1-2 hours",
+			"location": "Abu Dhabi"
+		},
+		{
+			"title": "Abu Dhabi Half Day Tour",
+			"info": "Abu Dhabi, the capital of the United Arab Emirates, is known for its impressive skyline, rich cultural heritage, and luxurious lifestyle. It is home to several iconic landmarks including the Sheikh Zayed Grand Mosque, a masterpiece of Islamic architecture. The city also offers vibrant cultural attractions like the Louvre Abu Dhabi, an art and civilization museum showcasing works from across the globe.",
+			"duration": "4 hours",
+			"location": "Abu Dhabi"
+		},
+		{
+			"title": "Abu Dhabi Full Day Tour",
+			"info": "Abu Dhabi, the capital of the United Arab Emirates, is known for its impressive skyline, rich cultural heritage, and luxurious lifestyle. It is home to several iconic landmarks including the Sheikh Zayed Grand Mosque, a masterpiece of Islamic architecture. The city also offers vibrant cultural attractions like the Louvre Abu Dhabi, an art and civilization museum showcasing works from across the globe.",
+			"duration": "8 hours",
+			"location": "Abu Dhabi"
+		},
+		{
+			"title": "Qasr Al Hosn Tour",
+			"info": "Qasr Al Hosn is the oldest stone building in Abu Dhabi, serving as a historical monument and museum. It narrates the story of the city from a settlement to the modern capital. The fort includes exhibitions that celebrate Emirati culture and history.",
+			"duration": "1-2 hours",
+			"location": "Abu Dhabi"
+		},
+		{
+			"title": "Dubai Full Day Tour",
+			"info": "Dubai is a global city known for its modern architecture, bustling nightlife, and luxury shopping. It features some of the world's most renowned attractions such as the Burj Khalifa, the tallest building in the world, and the Palm Jumeirah, an artificial archipelago. Visitors can also explore traditional markets, enjoy desert safaris, and experience the city's rich cultural heritage.",
+			"duration": "10 hours",
+			"location": "Dubai"
+		},
+		{
+			"title": "Burj Khalifa Tour",
+			"info": "Burj Khalifa, the tallest building in the world, stands as an iconic symbol of Dubai's rapid development. Visitors can enjoy breathtaking views from its observation decks. The structure also features luxurious residences, offices, and a hotel.",
+			"duration": "1-2 hours",
+			"location": "Dubai"
+		},
+		{
+			"title": "Museum of the Future Tour",
+			"info": "The Museum of the Future in Dubai showcases cutting-edge innovation and design. It offers interactive exhibits that explore future possibilities in technology, sustainability, and science, making it a must-visit for those intrigued by what's to come.",
+			"duration": "2-3 hours",
+			"location": "Dubai"
+		},
+		{
+			"title": "Burj Al Arab Tour",
+			"info": "Burj Al Arab is a luxury hotel known for its distinctive sail-shaped silhouette and opulent services. It offers the ultimate in luxury accommodations and dining experiences. The hotel is frequently cited as one of the most luxurious in the world.",
+			"duration": "1-2 hours",
+			"location": "Dubai"
+		},
+		{
+			"title": "Al Ain Full Day Tour",
+			"info": "Al Ain, known as the Garden City, is renowned for its greenery, historical sites, and cultural heritage. It features attractions such as the Al Ain Oasis, Al Jahili Fort, and a bustling camel market, providing a serene contrast to the busy cities of the UAE.",
+			"duration": "10 hours",
+			"location": "Al Ain"
+		},
+		{
+			"title": "Desert Safari + Dinner Tour",
+			"info": "This desert safari offers an unforgettable experience, combining thrilling dune bashing with a serene dinner under the stars. Guests can enjoy traditional Arabian cuisine, live entertainment, and the tranquility of the desert night.",
+			"duration": "5-6 hours",
+			"location": "Abu Dhabi"
+		},
+		{
+			"title": "Desert Safari + BBQ, Camel Ride Tour",
+			"info": "This adventure package includes an exciting desert safari with BBQ, camel riding, and sandboarding. It's a comprehensive experience that allows visitors to engage in various activities and immerse themselves in the desert's unique charm.",
+			"duration": "5-6 hours",
+			"location": "Abu Dhabi"
+		}
+	  ]
+}

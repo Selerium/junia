@@ -126,7 +126,113 @@ body {
 		}
 	}
 
-	
+	position: relative;
+
+	#black-layer {
+		background-color: rgba(#000000, 0.75);
+		position: fixed;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		z-index: -10000;
+		opacity: 0;
+		transition: 300ms linear opacity;
+	}
+
+	#black-layer #info-popup {
+		background-color: #e6e6e6;
+		position: fixed;
+		top: 15vh;
+		left: 15vw;
+		height: 70vh;
+		width: 70vw;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+		border-radius: 20px;
+
+		@media screen and (max-width: 900px) {
+			top: 10vh;
+			height: 80vh;
+		}
+
+		.close {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			width: 48px;
+			height: auto;
+			cursor: pointer;
+		}
+
+		h1 {
+			color: #bd6565;
+		}
+
+		.grid {
+			display: grid;
+			grid-template-columns: 40% 40%;
+			column-gap: 5%;
+			justify-content: center;
+			align-items: center;
+
+			@media screen and (max-width: 900px) {
+				grid-template-columns: 80%;
+				gap: 20px;
+			}
+
+			#info-para, .info .wrap p {
+				font-size: 1.5rem;
+
+				@media screen and (max-width: 900px) {
+					font-size: 1.25rem;
+				}
+			}
+
+			.info {
+				background-color: #d9d9d9;
+				padding: 2rem;
+				border-radius: 20px;
+				box-shadow: #000000 0 5px 10px 0px;
+
+				.wrap {
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					gap: 20px;
+					
+					img {
+						width: 64px;
+						height: auto;
+
+						@media screen and (max-width: 900px) {
+							width: 32px;
+						}
+					}
+				}
+			}
+		}
+
+		a {
+			background-color: #bd6565;
+			cursor: pointer;
+			color: white;
+			border-radius: 20px;
+			font-size: 2rem;
+			padding: 0.5rem;
+			border: solid black 1px;
+			transition: 150ms linear;
+
+			@media screen and (max-width: 500px) {
+				font-size: 1.25rem;
+			}
+		}
+
+		a:hover {
+			transform: scale(1.05);
+		}
+	}
 
 	.offers {
 		display: flex;
@@ -153,6 +259,7 @@ body {
 			gap: 2rem;
 
 			.single-offer {
+				cursor: pointer;
 				height: 400px;
 				width: 300px;
 				background-position: center;
