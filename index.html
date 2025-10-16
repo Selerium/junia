@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+	<head>
+		<!-- <base href="/junia/"> -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="fonts.css">
+		<link rel="stylesheet" href="base.css">
+		<link rel="stylesheet" href="index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<title>Junia Tourism</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="heading">
+				<a href="/">
+					<h1>JUNIA</h1>
+					<h3>tour guide consultancy</h3>
+				</a>
+			</div>
+			<div class="options">
+				<a href="#offers">book a tour</a>
+				<a href="#about-us">about</a>
+				<div class="social-icons">
+					<a href="#">
+						<img src="social-icons/whatsapp.png">
+					</a>
+					<a href="#">
+						<img src="social-icons/facebook.png">
+					</a>
+					<a href="#">
+						<img src="social-icons/instagram.png">
+					</a>
+				</div>
+			</div>
+			<div class="buttons">
+				<img src="icons/hamburger.png" onclick="openMenu()">
+				<div id="hamburger" class="options" onclick="openMenu()">
+					<a href="#offers">book a tour</a>
+					<a href="#about-us">about</a>
+					<div class="thick-line"></div>
+					<a href="#">
+						whatsapp
+					</a>
+					<a href="#">
+						facebook
+					</a>
+					<a href="#">
+						instagram
+					</a>
+				</div>
+			</div>
+		</div>
+
+		
+
+<div class="showreel">
+	<div class="blur-layer">
+		<h1>Discover the Emirates with Junia</h1>
+		<h3>available in the following lanugages:</h3>
+	</div>
+	
+	<img class="bg-image" src="carousel&#x2F;carousel1.jpg">
+	
+	<img class="bg-image" src="carousel&#x2F;carousel2.jpg">
+	
+	<img class="bg-image" src="carousel&#x2F;carousel3.jpg">
+	
+	<img class="bg-image" src="carousel&#x2F;carousel4.jpg">
+	
+	<div class="img-wrapper">
+		<div class="languages">
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/english.png">
+				<h4>English</h4>
+			</div>
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/norwegian.png">
+				<h4>Norwegian</h4>
+			</div>
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/german.png">
+				<h4>German</h4>
+			</div>
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/swedish.png">
+				<h4>Swedish</h4>
+			</div>
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/polish.png">
+				<h4>Polish</h4>
+			</div>
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/russian.png">
+				<h4>Russian</h4>
+			</div>
+			<div class="lang-wrap" onclick="changeLanguage()">
+				<img src="languages/danish.png">
+				<h4>Danish</h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="black-layer">
+	<div id="info-popup">
+		<img class="close" src="icons/close.png" onclick="showInfo('close')">
+		<h1>TOUR INFO</h1>
+		<div class="grid">
+			<p id="info-para">Junia Tour Guide Consultancy creates personalized experiences for visitors looking to enjoy the beauty and culture of the United Arab Emirates. We provides exceptional hospitality to high-end guests that require top-tier services, with our multilingual tour guide services.</p>
+			<div class="info">
+				<div class="wrap">
+					<img src="icons/time.png">
+					<p id="info-time">4 hours</p>
+				</div>
+				<br>
+				<div class="wrap">
+					<img src="icons/location.png">
+					<p id="info-location">Saadiyat Island, Abu Dhabi</p>
+				</div>
+			</div>
+		</div>
+		<a id="mail-button" href="mailto:bookings@juniatourism.com?subject=Booking (Tour Name)&body=Hi, I'd like to enquire about TOUR NAME for the date of *fill date here*">BOOK VIA EMAIL</a>
+	</div>
+</div>
+
+<div class="offers" id="offers">
+	<h1>TOUR THE EMIRATES OFFERS</h1>
+	<div class="offers-grid">
+		
+		<div class="single-offer" style="background-image: url(offers&#x2F;louvre.png);" onclick="showInfo('0')">
+			<a>
+				<div class="header">
+					<h4 class="place">Abu Dhabi</h4>
+				</div>
+				<div class="info">
+					<h4>Louvre Abu Dhabi Private Guided Tour</h4>
+					<p>from AED 850</p>
+				</div>
+			</a>
+		</div>
+		
+		<div class="single-offer" style="background-image: url(offers&#x2F;qasr-al-watan.png);" onclick="showInfo('1')">
+			<a>
+				<div class="header">
+					<h4 class="place">Abu Dhabi</h4>
+				</div>
+				<div class="info">
+					<h4>Qasr Al Watan Private Guided Tour</h4>
+					<p>from AED 250</p>
+				</div>
+			</a>
+		</div>
+		
+		<div class="single-offer" style="background-image: url(offers&#x2F;abu-dhabi-mosque.jpg);" onclick="showInfo('2')">
+			<a>
+				<div class="header">
+					<h4 class="place">Abu Dhabi</h4>
+				</div>
+				<div class="info">
+					<h4>Half Day Abu Dhabi City Tour (4 hours)</h4>
+					<p>from AED 365</p>
+				</div>
+			</a>
+		</div>
+		
+		<div class="single-offer" style="background-image: url(offers&#x2F;full-abu-dhabi.png);" onclick="showInfo('3')">
+			<a>
+				<div class="header">
+					<h4 class="place">Abu Dhabi</h4>
+				</div>
+				<div class="info">
+					<h4>Full Day Abu Dhabi City Tour (8 hours)</h4>
+					<p>from AED 325</p>
+				</div>
+			</a>
+		</div>
+		
+		<div class="single-offer" style="background-image: url(offers&#x2F;qasr-al-hosn.png);" onclick="showInfo('4')">
+			<a>
+				<div class="header">
+					<h4 class="place">Abu Dhabi</h4>
+				</div>
+				<div class="info">
+					<h4>Qasr Al Hosn</h4>
+					<p>from AED 30</p>
+				</div>
+			</a>
+		</div>
+		
+		<div class="single-offer" style="background-image: url(offers&#x2F;dubai.png);" onclick="showInfo('5')">
+			<a>
+				<div class="header">
+					<h4 class="place">Dubai</h4>
+				</div>
+				<div class="info">
+					<h4>Full Day Dubai City Tour (10 hours)</h4>
+					<p>from AED 395</p>
+				</div>
+			</a>
+		</div>
+		
+		<div class="single-offer" style="background-image: url(offers&#x2F;burj-khalifa.png);" onclick="showInfo('6')">
+			<a>
+				<div class="header">
+					<h4 class="place">Dubai</h4>
+				</div>
+				<div class="info">
+					<h4>Burj Khalifa Guided Tour</h4>
+					<p>from AED 379</p>
+				</div>
+			</a>
+		</div>
+		
+		<div class="single-offer" style="background-image: url(offers&#x2F;museum-of-the-future.png);" onclick="showInfo('7')">
+			<a>
+				<div class="header">
+					<h4 class="place">Dubai</h4>
+				</div>
+				<div class="info">
+					<h4>Museum Of The Future Guided Tour</h4>
+					<p>from AED 389</p>
+				</div>
+			</a>
+		</div>
+		
+		<div class="single-offer" style="background-image: url(offers&#x2F;burj-al-arab.png);" onclick="showInfo('8')">
+			<a>
+				<div class="header">
+					<h4 class="place">Dubai</h4>
+				</div>
+				<div class="info">
+					<h4>Burj Al Arab Guided Tour</h4>
+					<p>from AED 449</p>
+				</div>
+			</a>
+		</div>
+		
+		<div class="single-offer" style="background-image: url(offers&#x2F;jahili-fort.jpg);" onclick="showInfo('9')">
+			<a>
+				<div class="header">
+					<h4 class="place">Al Ain</h4>
+				</div>
+				<div class="info">
+					<h4>Full Day Al Ain Tour + Lunch (10 hours)</h4>
+					<p>from AED 1600</p>
+				</div>
+			</a>
+		</div>
+		
+		<div class="single-offer" style="background-image: url(offers&#x2F;desert-safari.jpg);" onclick="showInfo('10')">
+			<a>
+				<div class="header">
+					<h4 class="place">Abu Dhabi</h4>
+				</div>
+				<div class="info">
+					<h4>Desert Safari + Dinner Under The Stars</h4>
+					<p>from AED 360</p>
+				</div>
+			</a>
+		</div>
+		
+		<div class="single-offer" style="background-image: url(offers&#x2F;desert-camel.png);" onclick="showInfo('11')">
+			<a>
+				<div class="header">
+					<h4 class="place">Abu Dhabi</h4>
+				</div>
+				<div class="info">
+					<h4>Desert Safari + BBQ, Camel Ride &amp; Sandboarding</h4>
+					<p>from AED 360</p>
+				</div>
+			</a>
+		</div>
+		
+	</div>
+</div>
+
+<div class="about-us" id="about-us">
+	<h1>ABOUT US</h1>
+	<div class="about-grid">
+		<div class="junia-info">
+			<p class="upper">Junia Tour Guide Consultancy creates personalized experiences for visitors looking to enjoy the beauty and culture of the United Arab Emirates. We provides exceptional hospitality to high-end guests that require top-tier services, with our multilingual tour guide services.</p>
+			<p class="lower">Junia is run by Julia Undevik, an international tour guide expert, certified for Abu Dhabi with a fluency in 7 different languages. She is a passionate about engaging with tourists to understand and enjoy the culture that the UAE has to offer.</p>
+		</div>
+		<div class="image-carousel">
+			<img src="about-images/2.jpg">
+		</div>
+	</div>
+</div>
+
+<div class="certificates">
+	<h1>CERTIFICATIONS</h1>
+	<div class="info">
+		<div class="wrapper">
+			<img src="certificates/abu-dhabi.png">
+			<h4>Abu Dhabi Tour Guide</h4>
+		</div>
+	</div>
+</div>
+
+<script defer src="scripts/info.js"></script>
+
+
+
+		<div class="footer">
+			<a href="#">send us an email</a>
+			<a href="#">whatsapp</a>
+			<a href="#">facebook</a>
+			<a href="#">instagram</a>
+		</div>
+
+		<script defer src="scripts/menu.js"></script>
+	</body>
+</html>
