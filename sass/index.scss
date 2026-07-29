@@ -257,9 +257,12 @@ body {
 		width: 100vw;
 		padding: 4rem 10%;
 		box-sizing: border-box;
-		background-color: #bd6565;
 		color: white;
 		text-align: center;
+		background-image: url('images/ip-background.jpg');
+		background-position: center;
+		background-attachment: fixed;
+		background-size: cover;
 
 		.ip-content {
 			max-width: 900px;
