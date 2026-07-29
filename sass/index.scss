@@ -451,6 +451,18 @@ body {
 					font-style: italic;
 				}
 			}
+
+			.wrapper.text {
+				max-width: 450px;
+
+				p {
+					font-size: 1.25rem;
+					line-height: 1.6;
+					text-align: left;
+					color: #444;
+					margin-top: 1rem;
+				}
+			}
 		}
 	}
 }
