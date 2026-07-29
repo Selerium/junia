@@ -250,6 +250,33 @@ body {
 		}
 	}
 
+	.ip-banner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		padding: 4rem 10%;
+		box-sizing: border-box;
+		background-color: #bd6565;
+		color: white;
+		text-align: center;
+
+		.ip-content {
+			max-width: 900px;
+
+			h1 {
+				font-size: 2.5rem;
+				margin-bottom: 1.5rem;
+			}
+
+			p {
+				font-size: 1.25rem;
+				line-height: 1.7;
+				margin-top: 1rem;
+			}
+		}
+	}
+
 	.offers {
 		display: flex;
 		box-sizing: border-box;
@@ -452,17 +479,6 @@ body {
 				}
 			}
 
-			.wrapper.text {
-				max-width: 450px;
-
-				p {
-					font-size: 1.25rem;
-					line-height: 1.6;
-					text-align: left;
-					color: #444;
-					margin-top: 1rem;
-				}
 			}
-		}
 	}
 }
