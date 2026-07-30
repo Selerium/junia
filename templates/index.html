@@ -5,7 +5,7 @@
 <div class="showreel">
 	<div class="blur-layer">
 		<h1>Discover the Emirates with Junia</h1>
-		<h3>available in the following lanugages:</h3>
+		<h3>available in the following languages:</h3>
 	</div>
 	{% for image in section.extra.carousel %}
 	<img class="bg-image" src="{{ image.image }}">
@@ -97,7 +97,7 @@
 	<div class="about-grid">
 		<div class="junia-info">
 			<p class="upper">Junia DMC & leisure creates personalized experiences for visitors looking to enjoy the beauty and culture of the United Arab Emirates. We provides exceptional hospitality to high-end guests that require top-tier services, with our multilingual tour guide services.</p>
-			<p class="lower">Junia is run by Julia Undevik, a universal destination expert with a fluency in 7 different languages. She is passionate about engaging with tourists to understand and enjoy the culture that the UAE has to offer.</p>
+			<p class="lower">Junia is run by Julia Undevik, a universal destination expert with a fluency in 7 different languages. She is passionate about introducing the UAE to visitors and guests, connecting them with the UAE's heritage, engaging them with it's present culture, and inspiring them with it's future vision.</p>
 		</div>
 		<div class="image-carousel">
 			<img src="about-images/2.jpg">
@@ -117,6 +117,23 @@
 			<h4>Louvre Abu Dhabi Tour Guide</h4>
 		</div>
 	</div>
+</div>
+
+<div class="enquiry" id="enquiry">
+	<h1>SEND US AN ENQUIRY</h1>
+	<form action="https://formsubmit.co/julia.unde@gmail.com" method="POST">
+		<input type="hidden" name="_subject" value="New Enquiry from Junia Website">
+		<input type="hidden" name="_captcha" value="true">
+		<input type="hidden" name="_next" value="https://juniatourism.com">
+		<input type="hidden" name="_template" value="box">
+		<div class="form-row">
+			<input type="text" name="Full Name" placeholder="Full Name" required>
+			<input type="tel" name="Phone Number" placeholder="Phone Number" required>
+			<input type="email" name="Email" placeholder="Email Address" required>
+		</div>
+		<textarea name="Enquiry" placeholder="Write your enquiry here..." rows="6" required></textarea>
+		<button type="submit">SEND ENQUIRY</button>
+	</form>
 </div>
 
 <script defer src="scripts/info.js"></script>

@@ -439,6 +439,80 @@ body {
 		}
 	}
 
+	.enquiry {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100vw;
+		box-sizing: border-box;
+		padding: 4rem 10%;
+		background-color: #f5f5f5;
+		color: #bd6565;
+
+		h1 {
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+
+		form {
+			width: 100%;
+			max-width: 800px;
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+			color: black;
+
+			.form-row {
+				display: flex;
+				gap: 1rem;
+
+				@media screen and (max-width: 700px) {
+					flex-direction: column;
+				}
+
+				input {
+					flex: 1;
+				}
+			}
+
+			input, textarea {
+				padding: 1rem;
+				border: 2px solid #ddd;
+				border-radius: 8px;
+				font-size: 1.1rem;
+				font-family: 'high-tower';
+				outline: none;
+				transition: border-color 200ms;
+
+				&:focus {
+					border-color: #bd6565;
+				}
+			}
+
+			textarea {
+				resize: vertical;
+			}
+
+			button {
+				width: fit-content;
+				align-self: center;
+				padding: 1rem 3rem;
+				border: none;
+				border-radius: 8px;
+				background-color: #bd6565;
+				color: white;
+				font-size: 1.25rem;
+				font-family: 'high-tower';
+				cursor: pointer;
+				transition: transform 150ms;
+
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+
 	.certificates {
 		display: flex;
 		width: 100vw;
